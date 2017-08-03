@@ -5,15 +5,7 @@ public class ThreeSort {
     int c = Integer.parseInt(args[2]);
     int smallest = Math.min(a, Math.min(b, c));
     int largest = Math.max(a, Math.max(b, c));
-    int middle;
-    
-    if ((smallest == a || smallest == b) && (largest == a || largest == b)) {
-      middle = c;
-    } else if ((smallest == c || smallest == b) && (largest == c || largest == b)) {
-      middle = a;
-    } else {
-      middle = b;
-    }
+    int middle = a + b + c - smallest - largest;
 
     System.out.println(smallest + " " + middle + " " + largest);
   }
