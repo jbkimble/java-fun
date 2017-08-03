@@ -18,6 +18,5 @@ public class Dragon {
     System.out.println(dragon3);
     System.out.println(dragon4);
     System.out.println(dragon5);
-
   }
 }
